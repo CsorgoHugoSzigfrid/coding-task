@@ -145,7 +145,7 @@ class Account:
 					elif y >= 1 and x == 0:
 						symbols = [all_symbols[0], all_symbols[1]]
 			
-					# ' ', '|', '', ''
+					# ' ', '|', '\', '/'
 					elif y >= 1 and x == 2:
 						symbols = [all_symbols[0], all_symbols[1], all_symbols[3], all_symbols[4]]
 
@@ -204,7 +204,7 @@ class Account:
 			if digits[index] is None:
 				return account_number, "ERR", []
 		
-		# compiles and verifies the possibilities
+		# Compiles and verifies the possibilities
 		solutions = []
 		for digit in digits:
 			for d in digits[digit]:
@@ -214,7 +214,7 @@ class Account:
 				if self.isValid(possibility):
 					solutions.append(possibility)
 
-		# returns the valid account number(s) in the right format
+		# Returns the valid account number(s) in the right format
 		if solutions:
 			if len(solutions) == 1:
 				return solutions[0], None, []
