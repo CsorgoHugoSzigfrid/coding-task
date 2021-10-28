@@ -4,4 +4,4 @@ I made a test file generator. For help with that, use "py GenTestFile.py -h" com
 
 I also included the example data which is from the original task provider's site:
 
-The main program is "Bank OCR.py".
+The main program is "main.py".
